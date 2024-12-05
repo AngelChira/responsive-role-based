@@ -3,6 +3,7 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { supabase } from "@/integrations/supabase/client";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Navbar } from "@/components/Navbar";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -18,24 +19,27 @@ const Login = () => {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Novedades Isidora
-          </h2>
-          <p className="mt-2 text-center text-sm text-gray-600">
-            Inicia sesión o regístrate para continuar
-          </p>
-        </div>
-        <div className="mt-8">
-          <Auth
-            supabaseClient={supabase}
-            appearance={{ theme: ThemeSupa }}
-            theme="light"
-            providers={[]}
-            redirectTo={`${window.location.origin}/dashboard`}
-          />
+    <div className="min-h-screen bg-gray-50">
+      <Navbar />
+      <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-md w-full space-y-8">
+          <div>
+            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+              Novedades Isidora
+            </h2>
+            <p className="mt-2 text-center text-sm text-gray-600">
+              Inicia sesión o regístrate para continuar
+            </p>
+          </div>
+          <div className="mt-8 bg-white p-6 rounded-lg shadow">
+            <Auth
+              supabaseClient={supabase}
+              appearance={{ theme: ThemeSupa }}
+              theme="light"
+              providers={[]}
+              redirectTo={`${window.location.origin}/dashboard`}
+            />
+          </div>
         </div>
       </div>
     </div>
