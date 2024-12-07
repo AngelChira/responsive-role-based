@@ -8,7 +8,11 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
-  background-color: #f9fafb;
+  background-image: url('https://img.freepik.com/fotos-premium/par-zapatillas-sientan-plataforma-madera-frente-campo_777078-2045.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 /* Navigation styles */
@@ -31,7 +35,7 @@ nav {
 }
 
 .logo img {
-  height: 2rem;
+  height: 2.5rem;
   width: auto;
 }
 
@@ -77,6 +81,7 @@ nav {
 .mobile-menu {
   display: none;
   padding: 0.5rem 0;
+  background-color: white;
 }
 
 .mobile-menu.hidden {
@@ -136,26 +141,34 @@ nav {
 .main-container {
   min-height: calc(100vh - 4rem);
   padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  width: 100%;
   max-width: 28rem;
   margin: 0 auto;
 }
 
 .login-box {
-  width: 100%;
   background-color: white;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .login-header {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: #f9fafb;
+}
+
+.login-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .login-header h2 {
