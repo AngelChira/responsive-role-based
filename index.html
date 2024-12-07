@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novedades Isidora</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   </head>
   <body>
     <nav>
@@ -43,40 +42,108 @@
       </div>
     </nav>
 
-    <div class="main-container">
-      <div class="login-container">
-        <div class="login-box">
-          <div class="login-header">
-            <img src="/lovable-uploads/de526f8d-7f28-487c-a794-2354f5a2e0fb.png" alt="Logo" class="login-logo">
-            <h2>Novedades Isidora</h2>
-            <p>Inicia sesión para continuar</p>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>BIENVENIDO A NOVEDADES ISIDORA</h1>
+        </div>
+      </section>
+
+      <!-- Misión y Visión -->
+      <section class="mission-vision">
+        <div class="container">
+          <div class="mission-box">
+            <h2>Nuestra Misión</h2>
+            <p>Ofrecer productos de calzado de alta calidad que brinden comodidad y estilo a nuestros clientes, promoviendo una experiencia de compra satisfactoria.</p>
           </div>
-          <div class="login-form-container">
-            <form id="login-form">
-              <div class="form-group">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" required>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-full">
-                  Iniciar Sesión
-                </button>
-              </div>
-            </form>
-            <div class="register-link">
-              <p>
-                ¿No tienes una cuenta? 
-                <a href="/register">Regístrate aquí</a>
-              </p>
+          <div class="vision-box">
+            <h2>Nuestra Visión</h2>
+            <p>Ser la tienda líder en calzado a nivel nacional, reconocida por la innovación, la calidad de nuestros productos y la satisfacción del cliente.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Productos -->
+      <section class="products">
+        <div class="container">
+          <h2>Productos</h2>
+          <div class="products-grid">
+            <div class="product-card">
+              <img src="/lovable-uploads/8a2c0514-f581-4ca4-b75b-ed1838c389cb.png" alt="Zapatillas New Athletic Lifestyle">
+              <h3>Zapatillas New Athletic Lifestyle Baseflats59 Mujer</h3>
+              <p class="price">S/ 149.90</p>
+            </div>
+            <div class="product-card">
+              <img src="/lovable-uploads/8a2c0514-f581-4ca4-b75b-ed1838c389cb.png" alt="Zapatillas New Athletic Running">
+              <h3>Zapatillas New Athletic Running Spoom79 Hombre</h3>
+              <p class="price">S/ 129.90</p>
+            </div>
+            <div class="product-card">
+              <img src="/lovable-uploads/8a2c0514-f581-4ca4-b75b-ed1838c389cb.png" alt="Zapatillas New Athletic Outdoor">
+              <h3>Zapatillas New Athletic Outdoor Trocerr25 Hombre</h3>
+              <p class="price">S/ 149.90</p>
+            </div>
+            <div class="product-card">
+              <img src="/lovable-uploads/3dc8d696-054d-47b5-83bb-8d0b5a618b2c.png" alt="Sandalias">
+              <h3>Sandalias</h3>
+              <p class="price">S/ 100.00</p>
+            </div>
+            <div class="product-card">
+              <img src="/lovable-uploads/3dc8d696-054d-47b5-83bb-8d0b5a618b2c.png" alt="Zapatillas asics">
+              <h3>Zapatillas asics</h3>
+              <p class="price">S/ 100.00</p>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Botones de Acción -->
+      <section class="cta-buttons">
+        <div class="container">
+          <a href="/contact" class="btn btn-primary">Contáctanos</a>
+          <a href="/location" class="btn btn-primary">Visítanos</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>Teléfono: (01) 123-4567</p>
+          <p>WhatsApp: +51 987 654 321</p>
+          <p>Email: info@novedadesisidora.com</p>
+          <p>Dirección: Av. Principal 123, Lima</p>
+        </div>
+        <div class="footer-section">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="/about">Sobre Nosotros</a></li>
+            <li><a href="/products">Productos</a></li>
+            <li><a href="/contact">Contacto</a></li>
+            <li><a href="/location">Ubicación</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-links">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Twitter</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Horario de Atención</h3>
+          <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+          <p>Sábados: 9:00 AM - 2:00 PM</p>
+          <p>Domingos: Cerrado</p>
+        </div>
       </div>
-    </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Novedades Isidora. Todos los derechos reservados.</p>
+      </div>
+    </footer>
 
     <script>
       // Mobile menu toggle
@@ -85,44 +152,6 @@
 
       mobileMenuButton.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
-      });
-
-      // Initialize Supabase client
-      const supabaseUrl = 'https://qzxksxzibjrqmeuqzsex.supabase.co';
-      const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF6eGtzeHppYmpycW1ldXF6c2V4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjY2MTk1MTUsImV4cCI6MjA0MjE5NTUxNX0.q17i1bMWF0jOVXd6VVxDSo2Xakl52YgiA8XqKLkJbRM';
-      const supabase = supabase.createClient(supabaseUrl, supabaseKey);
-
-      // Handle login form submission
-      const loginForm = document.getElementById('login-form');
-      loginForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-
-        try {
-          const { data, error } = await supabase.auth.signInWithPassword({
-            email,
-            password
-          });
-
-          if (error) throw error;
-
-          // Check user role and redirect accordingly
-          const { data: profile } = await supabase
-            .from('profiles')
-            .select('role')
-            .eq('id', data.user.id)
-            .single();
-
-          if (profile.role === 'admin') {
-            window.location.href = '/admin-dashboard';
-          } else {
-            window.location.href = '/user-dashboard';
-          }
-        } catch (error) {
-          alert('Error al iniciar sesión: ' + error.message);
-        }
       });
     </script>
   </body>
