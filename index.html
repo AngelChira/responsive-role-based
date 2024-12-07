@@ -119,9 +119,9 @@
         mobileMenu.classList.toggle('hidden');
       });
 
-      // Initialize Supabase client
+      // Initialize Supabase client with the correct credentials
       const supabaseUrl = 'https://qzxksxzibjrqmeuqzsex.supabase.co';
-      const supabaseKey = 'your-anon-key'; // Replace with your actual anon key
+      const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF6eGtzeHppYmpycW1ldXF6c2V4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjY2MTk1MTUsImV4cCI6MjA0MjE5NTUxNX0.q17i1bMWF0jOVXd6VVxDSo2Xakl52YgiA8XqKLkJbRM';
       const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
       // Handle login form submission
