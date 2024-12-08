@@ -6,7 +6,7 @@ import { UserDashboard } from "@/components/UserDashboard";
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  const [userRole, setUserRole] = useState<string | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,9 +24,7 @@ const Dashboard = () => {
         .eq("id", session.user.id)
         .single();
 
-      if (profile) {
-        setUserRole(profile.role);
-      }
+      setIsAdmin(profile?.role === "admin");
       setLoading(false);
     };
 
@@ -37,7 +35,7 @@ const Dashboard = () => {
     return <div>Cargando...</div>;
   }
 
-  return userRole === "admin" ? <AdminDashboard /> : <UserDashboard />;
+  return isAdmin ? <AdminDashboard /> : <UserDashboard />;
 };
 
 export default Dashboard;
